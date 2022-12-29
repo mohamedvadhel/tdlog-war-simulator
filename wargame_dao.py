@@ -59,7 +59,7 @@ class WeaponEntity(Base):
 class GameDao:
     def map_to_game_entity(game : Game) -> GameEntity:
         game_entity = GameEntity()
-        # in case there were no players in the data base
+        # in case there is no player in the database
         try : 
             game_entity.players = game.players
         except:
